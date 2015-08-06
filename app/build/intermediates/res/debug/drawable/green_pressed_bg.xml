@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/green_bg_on"
+        android:state_pressed="true"/>
+    <item android:drawable="@drawable/green_bg_off"/>    
+</selector>
+<!-- From: file:/C:/Users/Kevin/StudioProjects/simon/app/src/main/res/drawable/green_pressed_bg.xml -->

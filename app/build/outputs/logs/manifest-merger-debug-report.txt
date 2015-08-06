@@ -1,0 +1,71 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:5
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	android:installLocation
+		ADDED from AndroidManifest.xml:6:5
+uses-sdk
+ADDED from AndroidManifest.xml:8:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:10:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:9:9
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+application
+ADDED from AndroidManifest.xml:12:5
+	android:label
+		ADDED from AndroidManifest.xml:15:9
+	android:allowBackup
+		ADDED from AndroidManifest.xml:13:9
+	android:icon
+		ADDED from AndroidManifest.xml:14:9
+	android:theme
+		ADDED from AndroidManifest.xml:16:9
+activity#com.gmail.kmlowe1.simon.MainActivity
+ADDED from AndroidManifest.xml:17:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:19:46
+	android:label
+		ADDED from AndroidManifest.xml:19:13
+	android:name
+		ADDED from AndroidManifest.xml:18:13
+activity#com.gmail.kmlowe1.simon.SimonSplash
+ADDED from AndroidManifest.xml:21:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:21:111
+	android:theme
+		ADDED from AndroidManifest.xml:21:46
+	android:name
+		ADDED from AndroidManifest.xml:21:19
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:22:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:23:17
+	android:name
+		ADDED from AndroidManifest.xml:23:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:24:17
+	android:name
+		ADDED from AndroidManifest.xml:24:27
+activity#com.gmail.kmlowe1.simon.SimonMenu
+ADDED from AndroidManifest.xml:27:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:27:84
+	android:theme
+		ADDED from AndroidManifest.xml:27:19
+	android:name
+		ADDED from AndroidManifest.xml:27:121
