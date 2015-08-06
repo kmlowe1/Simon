@@ -191,19 +191,19 @@ public class SimonMenu extends Activity implements OnClickListener{
 	
 	public void beta() {
     	AlertDialog.Builder beta = new AlertDialog.Builder(this);                                            // create an instance of a AlertDialog object
-    	beta.setTitle(getResources().getString(R.string.betaTitle));                                         // set the title text of the box
+    	beta.setTitle(getResources().getString(R.string.betaTitle));                                                                      // set the title text of the box
     	beta.setMessage(getResources().getString(R.string.betaMsg));
     	beta.setIcon(R.drawable.ic_launcher);                                                                // set the Icon for the dialog box
     	beta.setCancelable(false);                                                                           // set cancelable to false
-    	beta.setPositiveButton(getResources().getString(R.string.Ok), new DialogInterface.OnClickListener() { // set the positive button text and listener
+    	beta.setPositiveButton(getResources().getString(R.string.Ok), new DialogInterface.OnClickListener() {                                 // set the positive button text and listener
 		
 			@Override
-			public void onClick(DialogInterface dialog, int id) {                                             // positive button click
+			public void onClick(DialogInterface dialog, int id) {                                            // positive button click
 				
 			}
 		});
     	AlertDialog alertDialog = beta.create();                                                             // call the create method
-    	alertDialog.show();                                                                                   // show the box
+    	alertDialog.show();                                                                                  // show the box
     }		
 	
 }

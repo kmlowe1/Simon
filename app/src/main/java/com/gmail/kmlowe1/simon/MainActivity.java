@@ -94,8 +94,8 @@ public class MainActivity extends Activity{
 	    LayoutParams params = circleMask.getLayoutParams();		                                              // LayoutParams variable params to store the layout parameters for the circleMask TextView
 		switch(screenSize){                                                                                   // switch on the screenSize variable
 		case Configuration.SCREENLAYOUT_SIZE_XLARGE:                                                          // if the screen layout is XLarge
-			Toast.makeText(this, "XLarge, size: " + width + "X" + height,
-					   Toast.LENGTH_LONG).show();			
+//			Toast.makeText(this, "XLarge, size: " + width + "X" + height,
+//					   Toast.LENGTH_LONG).show();
 			params.height = 700;                                                                              // assign the height value to the circleMask params
 			params.width = 700;                                                                               // assign the width value to the circleMask params
   			circleMask.setLayoutParams(params);                                                               // set the new layout parameters to the circleMask object
@@ -106,8 +106,8 @@ public class MainActivity extends Activity{
 //			Toast.makeText(this, "Large, size: " + width + "X" + height,
 //					   Toast.LENGTH_LONG).show();
 			size = (height+width)/6;
-			params.height = size;                                                                              // assign the height value to the circleMask params
-			params.width = size;                                                                               // assign the width value to the circleMask params
+			params.height = size;                                                                             // assign the height value to the circleMask params
+			params.width = size;                                                                              // assign the width value to the circleMask params
 			circleMask.setLayoutParams(params);                                                               // set the new layout parameters to the circleMask object
 			titleFontSize = (height+width) / 40;                                                                               // set the titleFontSize
 			scoreFontSize = (height+width) / 80;                                                                               // set the scoreFontSize
@@ -204,7 +204,7 @@ public class MainActivity extends Activity{
 
 	View.OnTouchListener myTouchListener = new View.OnTouchListener(){                                        // OnTouchListener
 		@Override
-		public boolean onTouch(View v, MotionEvent event) {                                                   // onTouch function 
+		public boolean onTouch(View v, MotionEvent event) {                                                   // onTouch function
 			Handler handler = new Handler();                                                                  // define a local instance of a Handler object
 			if(run == true){                                                                                  // check if the thread is running
 				return true;                                                                                  // return true to eat the event (disable the buttons)
@@ -217,7 +217,7 @@ public class MainActivity extends Activity{
 						turn = player.COMPUTER;                                                               // set the turn variable to true
 						run = true;                                                                           // set the run variable to true
 						roundNumber++;                                                                        // increment the round number variable			
-						scoreBoard.setText(getResources().getString(R.string.round) +": " + (roundNumber+1)); // update the round number displayed in the score board text box
+						scoreBoard.setText(getResources().getString(R.string.round) +": " + (roundNumber+1)); 								  // update the round number displayed in the score board text box
 						count = 0;                                                                            // reset the count to zero person moves
 						handler.postDelayed(new Runnable(){                                                   // create a new runnable
 
@@ -230,7 +230,7 @@ public class MainActivity extends Activity{
 					}else if(isItCorrect(button)){                                                            // else check if the button is correct
 						return false;                                                                         // return false to display the button touch
 					}else if(!isItCorrect(button)){                                                           // else if the button is incorrect
-						scoreBoard.setText(getResources().getString(R.string.wrong));                         // set the score board text to indicate a wrong move
+						scoreBoard.setText(getResources().getString(R.string.wrong));                                                    // set the score board text to indicate a wrong move
 						gameOver();                                                                           // call game over
 						return true;                                                                          // return true to eat the event (disable the buttons)
 					}
@@ -405,14 +405,14 @@ public class MainActivity extends Activity{
     public void startGame(){                                                                                  // startGame function displays a dialog box
     	dialogBoxFlag = 1;                                                                                    // flag to indicate the dialog box was active(used for saved state)
     	AlertDialog.Builder start = new AlertDialog.Builder(this);                                            // create an instance of a AlertDialog object
-    	start.setTitle(getResources().getString(R.string.ready));                                             // set the title text of the box
+    	start.setTitle(getResources().getString(R.string.ready));                                                             // set the title text of the box
     	start.setIcon(R.drawable.ic_launcher);                                                                // set the Icon for the dialog box
     	start.setCancelable(false);                                                                           // set cancelable to false
-    	start.setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() { // set the positive button text and listener
+    	start.setPositiveButton(getResources().getString(R.string.yes), new DialogInterface.OnClickListener() {                                // set the positive button text and listener
 			
 			@Override
 			public void onClick(DialogInterface dialog, int id) {                                             // positive button click
-				scoreBoard.setText(getResources().getString(R.string.round) + ": " + (roundNumber+1));        // set the score board text
+				scoreBoard.setText(getResources().getString(R.string.round) + ": " + (roundNumber+1));                                         // set the score board text
 				dialogBoxFlag = 0;                                                                            // set the dialogbox flag to 0(used for saved state)
 				simon();                                                                                      // call simon function
 			}
