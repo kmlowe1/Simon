@@ -56,13 +56,13 @@ public class MainActivity extends Activity{
 		gameTitle.setTextSize(titleFontSize);                                                                 // set game title text size
 		gameTitle.setGravity(Gravity.CENTER_VERTICAL | Gravity.CLIP_HORIZONTAL);                              // set game title text orientation
 		gameTitle.setTypeface(tf);                                                                            // set game title type face
-		gameTitle.setText(getResources().getString(R.string.gameTitle));                                      // set game title text
+		gameTitle.setText(getResources().getString(R.string.gameTitle));                                                                           // set game title text
 		
 		scoreBoard = (TextView) findViewById(R.id.score_board);                                               // inflate the score board text box
 		scoreBoard.setTextColor(0xff0066cc);                                                                  // set score board text color
 		scoreBoard.setTextSize(scoreFontSize);                                                                // set score board text size
 		scoreBoard.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);                           // set score board text orientation
-		scoreBoard.setText(getResources().getString(R.string.round) + ": " + (roundNumber+1));                // set score board text plus the round number
+		scoreBoard.setText(getResources().getString(R.string.round) + ": " + (roundNumber+1));                                                 // set score board text plus the round number
 		
 		int buttonId[] = { R.id.Button01, R.id.Button02,                                                      // Array of buttonIds for the gamebutton objects
 						   R.id.Button03, R.id.Button04 };
